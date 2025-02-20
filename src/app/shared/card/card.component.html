@@ -1,0 +1,13 @@
+<!-- Cards with media area -->
+<mat-card class="example-card" *ngFor="let s of dataArray">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{s.id}}</mat-card-title>
+        <img mat-card-sm-image [src]="s.thumbnailUrl" [alt]="s.title" width="300" >
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      {{s.title}}
+    </mat-card-content>
+  </mat-card>
+  
